@@ -10,8 +10,8 @@ public class LoginTests extends BaseTest {
     @Test
     public void positiveLoginUserDTO() {
         UserDTO userDTO = new UserDTO("testqa20@gmail.com", "123456Aa$");
-        BaseTest.app.getUserHelper().login(userDTO);
-        Assert.assertTrue(BaseTest.app.getUserHelper().validatePopUpMessageSuccessAfterLogin());
+        app.getUserHelper().login(userDTO);
+        Assert.assertTrue(app.getUserHelper().validatePopUpMessageSuccessAfterLogin());
 
     }
 
@@ -20,8 +20,8 @@ public class LoginTests extends BaseTest {
         UserDTOWith userDTOWith = new UserDTOWith()
                 .withEmail("testqa20@gmail.com")
                 .withPassword("123456Aa$");
-        BaseTest.app.getUserHelper().login(userDTOWith);
-        Assert.assertTrue(BaseTest.app.getUserHelper().validatePopUpMessageSuccessAfterLogin());
+        app.getUserHelper().login(userDTOWith);
+        Assert.assertTrue(app.getUserHelper().validatePopUpMessageSuccessAfterLogin());
 
     }
 
