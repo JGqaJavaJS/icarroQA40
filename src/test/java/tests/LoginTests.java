@@ -22,6 +22,7 @@ public class LoginTests extends BaseTest {
                 .withPassword("123456Aa$");
         app.getUserHelper().login(userDTOWith);
         Assert.assertTrue(app.getUserHelper().validatePopUpMessageSuccessAfterLogin());
+        //
 
     }
 
